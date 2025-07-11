@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍💻 Nekolaiv's Personal Developer Website
 
-## Getting Started
+Welcome to my official developer website.  
+This is the central hub for everything about me as a **software engineer** — featuring my resume, selected projects, ways to connect, and more. Built with **Next.js**, **Tailwind CSS**, and **TypeScript**, this site is designed to be fast, modern, and easily scalable.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ What's Inside
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ⚪ **Landing Page** — Clean, minimal, first impression
+- 📄 **Resume Page** — Skills, education, and experience
+- 💼 **Projects Page** — Selected real-world and personal projects
+- ✉️ **Contact Page** — Get in touch with me directly
+- 🌗 **Dark/Light Mode** — Customizable theme for better accessibility
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+| Framework | Styling      | Language    | Deployment |
+|-----------|--------------|-------------|------------|
+| Next.js   | Tailwind CSS | TypeScript  | Vercel     |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚧 Project Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> **Version:** `v1.0.0`  
+> This website is a **work in progress** and will continue to evolve as I grow in my career. Expect more polish, more features, and more content in the coming iterations.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Want to collaborate, ask a question, or just say hello?
+
+📧 **idulsa.emannicholas@gmail.com**  
+🌐 **[Visit My Website](https://your-domain.com)** <!-- Replace with your domain -->
+
+---
+
+## 📜 License
+
+This project is licensed. See the [LICENSE](./LICENSE) file for full details.
