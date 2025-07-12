@@ -35,7 +35,7 @@ This is the central hub for everything about me as a **software engineer** — f
 Want to collaborate, ask a question, or just say hello?
 
 📧 **idulsa.emannicholas@gmail.com**  
-🌐 **[Visit My Website](https://your-domain.com)** <!-- Replace with your domain -->
+🌐 **[Visit My Website](https://nekolaiv.vercel.app/)** <!-- Replace with your domain -->
 
 ---
 
