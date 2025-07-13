@@ -12,7 +12,7 @@ const projects = [
     live: "#",
   },
   {
-    title: "Task Management App",
+    title: "VAWC Portal - WMSU | DILG",
     description:
       "A Django-powered portal for reporting and managing Violence Against Women (VAWC) cases, built with Bootstrap and JavaScript.",
     technologies: ["Django", "Bootstrap", "CSS", "JavaScript"],
