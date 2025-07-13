@@ -1,6 +1,7 @@
 import Hero from "@/components/hero"
 import Projects from "@/components/projects"
 import Resume from "@/components/resume"
+import Contact from "@/components/contact"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Resume />
+      <Contact />
     </main>
   )
 }
