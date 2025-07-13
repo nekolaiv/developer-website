@@ -71,14 +71,28 @@ export default function Projects() {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    <Button variant="ghost" size="sm" className="p-0 h-auto">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button variant="ghost" size="sm" className="p-0 h-auto">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </Button>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm text-gray-700 dark:text-gray-300 hover:underline"
+                    >
+                      <Button variant="ghost" size="sm" className="p-0 h-auto">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </Button>
+                    </a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-sm text-gray-700 dark:text-gray-300 hover:underline"
+                    >
+                      <Button variant="ghost" size="sm" className="p-0 h-auto">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    </a>
                   </div>
                 </div>
               </CardContent>
