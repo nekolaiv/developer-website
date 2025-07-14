@@ -23,7 +23,7 @@ const projects = [
     title: "Items Crudified",
     description:
       "A Django-based item manager with full CRUD features for easy tracking and organization.",
-    technologies: ["Vue.js", "Express", "OpenWeather API", "Chart.js"],
+    technologies: ["Django", "Tailwind CSS", "HTML", "CSS", "Python", "Javascript"],
     github: "https://github.com/nekolaiv/items-crudified",
     live: "https://nekolaiv.pythonanywhere.com/",
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "Developer Website",
     description:
       "A minimalist portfolio website showcasing clean design principles, smooth animations, and optimal performance across all devices.",
-    technologies: ["Next.js", "Tailwind CSS"],
+    technologies: ["Next.js", "Tailwind CSS", "Typescript"],
     github: "https://github.com/nekolaiv/developer-website",
     live: "https://nekolaiv.vercel.app/",
   },
