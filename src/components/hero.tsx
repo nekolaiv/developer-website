@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight">Nekolaiv</h1>
-            <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 font-light">Junior Software Developer</p>
+            <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 font-light">Software Developer</p>
           </div>
 
           <div className="space-y-6">
