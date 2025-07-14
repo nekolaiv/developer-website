@@ -6,7 +6,7 @@ import { Download, Briefcase, GraduationCap, Award } from "lucide-react"
 const experience = [
   {
     title: "Intern Developer",
-    company: "WMSU | DILG",
+    company: "VAWC Portal - WMSU | DILG",
     period: "February 2025 - July 2025",
     description:
       "Maintained and enhanced website features during internship by fixing bugs, updating components, and ensuring responsive user experience.",
@@ -17,23 +17,105 @@ const education = [
   {
     degree: "Associate Degree in Computer Technology",
     major: "Major in Application Development",
-    period: "2023 - 2025",
-    description: "Focused on software development, covering programming, databases, and web technologies.",
+    description:
+      "A comprehensive program focused on practical and theoretical foundations of software development, including programming concepts, database management, web technologies, and hands-on integration of modern AI tools and practices.",
+    skills: [
+      {
+        category: "Core Programming",
+        items: [
+          "Programming Fundamentals (C++, Java, Python, JavaScript)",
+          "Object-Oriented Programming (Python, Java)",
+        ],
+      },
+      {
+        category: "Web Development",
+        items: [
+          "Full-Stack Web Development",
+          "Frontend Development (HTML, CSS, JavaScript, React)",
+          "Backend Development (Django, PHP)",
+        ],
+      },
+      {
+        category: "Database & Tools",
+        items: [
+          "Database Design & Management (MySQL, phpMyAdmin)",
+          "Version Control (Git, GitHub)",
+        ],
+      },
+      {
+        category: "Design & Debugging",
+        items: [
+          "Responsive UI/UX Design with Tailwind CSS",
+          "Debugging and Code Optimization",
+          "Prototype Development (Figma)",
+        ],
+      },
+      {
+        category: "Mobile Development",
+        items: [
+          "Mobile App Development (Flutter, FlutterFlow)",
+        ],
+      },
+      {
+        category: "AI & ML",
+        items: [
+          "AI Model Integration (TensorFlow, scikit-learn)",
+          "Prompt Engineering for LLMs (ChatGPT)",
+          "AI Application Development (predictive models)",
+          "AI Model Training & Deployment (Google Colab, Jupyter Notebooks)",
+        ],
+      },
+      {
+        category: "Data Analysis",
+        items: [
+          "Data Cleaning and Preprocessing (Pandas, NumPy)",
+          "Basic Exploratory Data Analysis (EDA)",
+          "Introductory Feature Engineering",
+        ],
+      },
+      {
+        category: "Others",
+        items: ["Project Management & Team Collaboration"],
+      },
+    ],
   },
 ]
 
 const skills = [
-  "JavaScript/TypeScript",
-  "React/Next.js",
+  // Programming Languages
+  "JavaScript / TypeScript",
   "Python",
-  "Django",
+  "Java",
+  "C++",
   "PHP",
-  "Git/Github",
-  "HTML/CSS",
+
+  // Web Development
+  "React / Next.js",
+  "Django",
+  "HTML / CSS",
   "Tailwind CSS",
-  "ChatGPT",
+  "RESTful APIs",
+
+  // Mobile Development
+  "Flutter",
+  "FlutterFlow",
+
+  // AI & Machine Learning
+  "TensorFlow",
+  "scikit-learn",
   "Prompt Engineering",
+  "ChatGPT",
+  "AI Model Integration",
+  "Model Training & Deployment (Colab, Jupyter)",
+
+  // Tools & Practices
+  "Git / GitHub",
+  "MySQL / phpMyAdmin",
+  "Figma",
+  "Debugging & Testing",
+  "Project Management",
 ]
+
 
 export default function Resume() {
   const handleDownload = () => {
@@ -90,13 +172,39 @@ export default function Resume() {
             </div>
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <div key={index} className="border-l-2 border-gray-200 dark:border-gray-700 pl-6 pb-6">
+                <div
+                  key={index}
+                  className="border-l-2 border-gray-200 dark:border-gray-700 pl-6 pb-6"
+                >
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                     <h4 className="text-xl font-medium">{edu.degree}</h4>
-                    <span className="text-sm text-gray-500 dark:text-gray-400">{edu.period}</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 font-medium mb-2">{edu.major}</p>
-                  <p className="text-gray-700 dark:text-gray-300">{edu.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400 font-medium mb-2">
+                    {edu.major}
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">{edu.description}</p>
+
+                  {edu.skills && edu.skills.length > 0 && (
+                    <div>
+                      <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                        Skills Acquired:
+                      </p>
+                      <div className="space-y-4">
+                        {edu.skills.map((skillGroup, i) => (
+                          <div key={i}>
+                            <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">
+                              {skillGroup.category}
+                            </p>
+                            <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 space-y-1">
+                              {skillGroup.items.map((item, j) => (
+                                <li key={j}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
