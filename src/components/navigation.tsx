@@ -1,21 +1,23 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun, Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
+import Link from "next/link"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
+  const [activeSection, setActiveSection] = useState<string | null>(null)
   const { theme, setTheme } = useTheme()
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
-  ]
+  ], [])
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,8 +34,11 @@ export default function Navigation() {
     }
 
     window.addEventListener("scroll", handleScroll)
+
+    handleScroll() // Initial check on mount
+
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [navItems])
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -47,8 +52,9 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 z-50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-xl">Nekolaiv</div>
-
+          <Link href="/">
+            <div className="font-bold text-xl cursor-pointer">Nekolaiv</div>
+          </Link>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
