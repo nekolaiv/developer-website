@@ -94,15 +94,12 @@ const skills = [
   "Django",
   "HTML / CSS",
   "Tailwind CSS",
-  "RESTful APIs",
 
   // Mobile Development
   "Flutter",
   "FlutterFlow",
 
   // AI & Machine Learning
-  "TensorFlow",
-  "scikit-learn",
   "Prompt Engineering",
   "ChatGPT",
   "AI Model Integration",
