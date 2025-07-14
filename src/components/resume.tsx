@@ -25,13 +25,14 @@ const education = [
 const skills = [
   "JavaScript/TypeScript",
   "React/Next.js",
-  "Node.js",
   "Python",
   "Django",
   "PHP",
   "Git/Github",
   "HTML/CSS",
   "Tailwind CSS",
+  "ChatGPT",
+  "Prompt Engineering",
 ]
 
 export default function Resume() {

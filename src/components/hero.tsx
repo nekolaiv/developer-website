@@ -1,7 +1,20 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Mail } from "lucide-react"
+
+const socialLinks = [
+  {
+    name: "GitHub",
+    icon: Github,
+    href: "https://github.com/nekolaiv",
+  },
+  {
+    name: "Email",
+    icon: Mail,
+    href: "mailto:idulsa.emannicholas@gmail.com",
+  },
+]
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -27,18 +40,23 @@ export default function Hero() {
             </p>
 
             <div className="flex justify-center space-x-6">
-              <Button variant="ghost" size="icon" className="h-12 w-12">
-                <Github className="h-6 w-6" />
-                <span className="sr-only">GitHub</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="h-12 w-12">
-                <Linkedin className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="h-12 w-12">
-                <Mail className="h-6 w-6" />
-                <span className="sr-only">Email</span>
-              </Button>
+              {socialLinks.map((link) => {
+                const Icon = link.icon
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={link.name}
+                  >
+                    <Button variant="ghost" size="icon" className="h-12 w-12">
+                      <Icon className="h-6 w-6" />
+                      <span className="sr-only">{link.name}</span>
+                    </Button>
+                  </a>
+                )
+              })}
             </div>
           </div>
 
