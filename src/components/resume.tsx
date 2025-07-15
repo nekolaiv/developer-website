@@ -154,9 +154,8 @@ const skills = [
 
 export default function Resume() {
   const handleDownload = () => {
-    // In a real application, this would download the actual resume file
     const link = document.createElement("a")
-    link.href = "/Resume-v1.pdf" // You would place your actual resume file in the public folder
+    link.href = "/Resume-v1.pdf"
     link.download = "Nekolaiv-Resume.pdf"
     link.click()
   }
@@ -299,8 +298,8 @@ export default function Resume() {
 
                   {edu.skills && edu.skills.length > 0 && (
                     <div>
-                      <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                        Skills Acquired:
+                      <p className="text-md font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                        Curriculum Highlights:
                       </p>
                       <div className="space-y-4">
                         {edu.skills.map((skillGroup, i) => (
