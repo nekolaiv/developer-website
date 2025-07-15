@@ -6,7 +6,6 @@ import Contact from "@/components/contact"
 
 export default function Home() {
   return (
-    // test for vercel ignore build step
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <Navigation />
       <Hero />
