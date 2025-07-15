@@ -124,7 +124,6 @@ const skills = [
   // Programming Languages
   "JavaScript / TypeScript",
   "Python",
-  "Java",
   "C++",
   "PHP",
 
@@ -148,7 +147,7 @@ const skills = [
   "Git / GitHub",
   "MySQL / phpMyAdmin",
   "Figma",
-  "Debugging & Testing",
+  "Debugging",
   "Project Management",
 ]
 
