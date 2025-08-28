@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
+import { Mail, Send } from "lucide-react"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -74,14 +74,6 @@ export default function Contact() {
               <div className="flex items-center space-x-4">
                 <Mail className="h-5 w-5 text-gray-500" />
                 <span className="text-gray-700 dark:text-gray-300">idulsa.emmannicholas@email.com</span>
-              </div>
-              <div className="flex items-center space-x-4">
-                <Phone className="h-5 w-5 text-gray-500" />
-                <span className="text-gray-700 dark:text-gray-300">+63 993 355 6320</span>
-              </div>
-              <div className="flex items-center space-x-4">
-                <MapPin className="h-5 w-5 text-gray-500" />
-                <span className="text-gray-700 dark:text-gray-300">ZAMBOANGA CITY, PH</span>
               </div>
             </div>
           </div>
