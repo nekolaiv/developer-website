@@ -4,12 +4,28 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
-    title: "GWA Calculator and Dean’s List Qualification System",
+    title: "LNSC Commerce",
     description:
-      "A PHP-powered tool for calculating and verifying Dean's List eligibility for WMSU CCS college students.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/nekolaiv/student-gwa-system",
-    live: "#",
+      "A modern, full-stack eCommerce platform for LNSC Laptops — featuring product browsing, smart search, cart & checkout, user authentication, and admin-ready functionality. Built with Next.js, Tailwind CSS, and Vercel.",
+    technologies: ["NextJS", "ReactJS", "NodeJS", "Typescript", "Tailwind CSS"],
+    github: "https://github.com/nekolaiv/lnsc-ecommerce",
+    live: "https://lnsc-ecommerce.vercel.app",
+  },
+  {
+    title: "BookCoup",
+    description:
+      "Full-stack Next.js library system with role-based access, dynamic book ID generation, borrowing constraints, and admin/user dashboards.",
+    technologies: ["NextJS", "ReactJS", "NodeJS", "Typescript", "Tailwind CSS"],
+    github: "https://github.com/nekolaiv/book-coup",
+    live: "https://book-coup.vercel.app",
+  },
+  {
+    title: "PromptEAT",
+    description:
+      "A growing open-source prompt library to Encode, Adapt, and Transform (EAT) ideas into powerful AI interactions.",
+    technologies: ["NextJS", "ReactJS", "NodeJS", "Typescript", "Tailwind CSS"],
+    github: "https://github.com/nekolaiv/prompt-eat",
+    live: "https://prompt-eat.vercel.app",
   },
   {
     title: "VAWC Portal - WMSU | DILG",
@@ -28,13 +44,13 @@ const projects = [
     live: "https://nekolaiv.pythonanywhere.com/",
   },
   {
-    title: "Developer Website",
+    title: "GWA Calculator and Dean’s List Qualification System",
     description:
-      "A minimalist portfolio website showcasing clean design principles, smooth animations, and optimal performance across all devices.",
-    technologies: ["Next.js", "Tailwind CSS", "Typescript"],
-    github: "https://github.com/nekolaiv/developer-website",
-    live: "https://nekolaiv.vercel.app/",
-  },
+      "A PHP-powered tool for calculating and verifying Dean's List eligibility for WMSU CCS college students.",
+    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/nekolaiv/student-gwa-system",
+    live: "#",
+  }
 ]
 
 export default function Projects() {

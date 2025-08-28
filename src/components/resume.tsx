@@ -155,7 +155,7 @@ const skills = [
 export default function Resume() {
   const handleDownload = () => {
     const link = document.createElement("a")
-    link.href = "/Resume-v1.pdf"
+    link.href = "/Resume.pdf"
     link.download = "Nekolaiv-Resume.pdf"
     link.click()
   }
