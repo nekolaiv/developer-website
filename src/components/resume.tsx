@@ -17,7 +17,7 @@ import {
 const experience = [
   {
     title: "Intern Developer",
-    company: "VAWC Portal – WMSU | DILG",
+    company: "VAWC Portal – WMSU | Department of the Interior and Local Government",
     period: "February 2025 – July 2025",
     description:
       "Maintained and enhanced web application features by identifying and fixing bugs, refactoring components, and ensuring a responsive, accessible, and user-friendly experience across devices.",
