@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     "Will your clothes dry today? A simple rain guide for laundry day. Download the Android app.",
 }
 
-// The APK is attached to the latest GitHub release of the app.
-const APK_URL = "https://github.com/nekolaiv/wash-or-not/releases/latest/download/wash-or-not.apk"
+// Every version of the APK is uploaded to this Google Drive folder.
+const APK_URL = "https://drive.google.com/drive/folders/1Go8yh_C59EujodsVwI6Sd4oXFd4oWbYW"
 const REPO_URL = "https://github.com/nekolaiv/wash-or-not"
 
 const steps = [
-  "Tap Download and open the file when it finishes.",
+  "Open the download folder and tap the newest APK file, then Download. If Drive says it can't scan the file for viruses, tap Download anyway.",
   "If your phone asks, allow installs from this browser. This is normal for apps outside the Play Store.",
   "Tap Install, then open Wash or Not.",
 ]
@@ -71,6 +71,8 @@ export default function WashOrNotPage() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href={APK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-2xl bg-[#6A9BCC] px-6 py-3.5 text-base font-medium text-white shadow-lg transition-transform active:scale-[0.98] hover:bg-[#5B8DC0]"
             >
               <Download className="h-5 w-5" />
@@ -86,7 +88,7 @@ export default function WashOrNotPage() {
               Code
             </a>
           </div>
-          <p className="mt-3 text-sm text-gray-500">Free APK file. Android 6 or newer.</p>
+          <p className="mt-3 text-sm text-gray-500">Free APK file on Google Drive. Android 6 or newer.</p>
         </section>
 
         <section className="rounded-3xl border border-gray-200 dark:border-gray-800 p-6">
