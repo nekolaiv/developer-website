@@ -2,7 +2,25 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ExternalLink, Github } from "lucide-react"
 
-const projects = [
+const projects: {
+  title: string
+  description: string
+  technologies: string[]
+  github: string
+  live: string
+  liveLabel?: string
+  internal?: boolean
+}[] = [
+  {
+    title: "Wash or Not",
+    description:
+      "A simple Android app that tells you if today is a good day to wash laundry and hang it outside. Rain-only answer, hour-by-hour cards, offline-first, and an optional wash reminder.",
+    technologies: ["Flutter", "Dart", "Open-Meteo API", "Android"],
+    github: "https://github.com/nekolaiv/wash-or-not",
+    live: "/wash-or-not",
+    liveLabel: "Get the App",
+    internal: true,
+  },
   {
     title: "LNSC Commerce",
     description:
@@ -100,13 +118,12 @@ export default function Projects() {
                     </a>
                     <a
                       href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      {...(project.internal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                       className="inline-flex items-center text-sm text-gray-700 dark:text-gray-300 hover:underline"
                     >
                       <Button variant="ghost" size="sm" className="p-0 h-auto">
                         <ExternalLink className="h-4 w-4 mr-2" />
-                        Live Demo
+                        {project.liveLabel ?? "Live Demo"}
                       </Button>
                     </a>
                   </div>
