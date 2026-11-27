@@ -9,8 +9,20 @@ const projects: {
   github: string
   live: string
   liveLabel?: string
+  githubLabel?: string
   internal?: boolean
 }[] = [
+  {
+    title: "Coffee Paste",
+    description:
+      "Send copy-pastes between your phone and your laptop in one tap. Scan a code, then share text, use a floating bubble, or turn your phone into a trackpad for the laptop.",
+    technologies: ["Flutter", "Dart", "Windows", "Android"],
+    github: "https://github.com/nekolaiv/coffee-paste/releases",
+    githubLabel: "Releases",
+    live: "/coffee-paste",
+    liveLabel: "Get the App",
+    internal: true,
+  },
   {
     title: "Wash or Not",
     description:
@@ -113,7 +125,7 @@ export default function Projects() {
                     >
                       <Button variant="ghost" size="sm" className="p-0 h-auto">
                         <Github className="h-4 w-4 mr-2" />
-                        Code
+                        {project.githubLabel ?? "Code"}
                       </Button>
                     </a>
                     <a
