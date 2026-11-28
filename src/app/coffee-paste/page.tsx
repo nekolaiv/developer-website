@@ -9,8 +9,6 @@ export const metadata: Metadata = {
     "Send copy-pastes between your phone and your laptop in one tap. Scan a code, done. Download for Windows and Android.",
 }
 
-const REPO = "https://github.com/nekolaiv/coffee-paste"
-
 const facts = [
   {
     icon: QrCode,
@@ -35,7 +33,7 @@ const facts = [
 ]
 
 const windowsSteps = [
-  "Download the Windows file above, then unzip it anywhere (the whole folder, not just the .exe).",
+  "Open the download folder above and tap the newest .zip file, then Download. If Drive says it can't scan the file for viruses, tap Download anyway. Unzip it anywhere (the whole folder, not just the .exe).",
   "Run coffee_paste.exe inside it. Windows will warn it is from an unrecognized publisher — click “More info,” then “Run anyway.”",
   "The first time, Windows Firewall will ask to let it communicate. Allow it on private networks (your home or office Wi-Fi).",
   "A code appears in the window. Open Coffee Paste on your phone and scan it.",
@@ -43,7 +41,7 @@ const windowsSteps = [
 ]
 
 const androidSteps = [
-  "Download the Android file above and open it when it finishes.",
+  "Open the download folder above and tap the newest .apk file, then Download. If Drive says it can't scan the file for viruses, tap Download anyway. Open it when it finishes.",
   "Your phone will ask to allow installs from this browser — allow it once. This is normal for an app outside the Play Store.",
   "Tap Install, then open Coffee Paste and scan the code shown on your laptop.",
 ]
@@ -123,13 +121,7 @@ export default function CoffeePastePage() {
           </ol>
         </details>
 
-        <p className="mt-10 text-center text-xs text-gray-500">
-          Source is private.{" "}
-          <a href={`${REPO}/releases`} target="_blank" rel="noopener noreferrer" className="hover:underline">
-            Release notes
-          </a>{" "}
-          are public.
-        </p>
+        <p className="mt-10 text-center text-xs text-gray-500">Source is private.</p>
       </div>
     </main>
   )

@@ -6,7 +6,7 @@ const projects: {
   title: string
   description: string
   technologies: string[]
-  github: string
+  github?: string
   live: string
   liveLabel?: string
   githubLabel?: string
@@ -17,8 +17,6 @@ const projects: {
     description:
       "Send copy-pastes between your phone and your laptop in one tap. Scan a code, then share text, use a floating bubble, or turn your phone into a trackpad for the laptop.",
     technologies: ["Flutter", "Dart", "Windows", "Android"],
-    github: "https://github.com/nekolaiv/coffee-paste/releases",
-    githubLabel: "Releases",
     live: "/coffee-paste",
     liveLabel: "Get the App",
     internal: true,
@@ -69,17 +67,19 @@ export default function Projects() {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center text-sm text-gray-700 dark:text-gray-300 hover:underline"
-                    >
-                      <Button variant="ghost" size="sm" className="p-0 h-auto">
-                        <Github className="h-4 w-4 mr-2" />
-                        {project.githubLabel ?? "Code"}
-                      </Button>
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm text-gray-700 dark:text-gray-300 hover:underline"
+                      >
+                        <Button variant="ghost" size="sm" className="p-0 h-auto">
+                          <Github className="h-4 w-4 mr-2" />
+                          {project.githubLabel ?? "Code"}
+                        </Button>
+                      </a>
+                    )}
                     <a
                       href={project.live}
                       {...(project.internal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
