@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
-import Link from "next/link"
-import { ArrowLeft, CloudRain, Download, Github, WifiOff, Eye } from "lucide-react"
+import { CloudRain, Download, Github, WifiOff, Eye } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Wash or Not - Nekolaiv",
@@ -40,14 +39,6 @@ export default function WashOrNotPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
-        <Link
-          href="/#projects"
-          className="inline-flex items-center text-sm text-gray-600 dark:text-gray-400 hover:underline"
-        >
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Back to projects
-        </Link>
-
         <section className="pt-14 pb-10">
           <div
             aria-hidden="true"

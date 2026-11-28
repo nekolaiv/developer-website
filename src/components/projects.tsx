@@ -31,54 +31,6 @@ const projects: {
     liveLabel: "Get the App",
     internal: true,
   },
-  {
-    title: "LNSC Commerce",
-    description:
-      "A modern, full-stack eCommerce platform for LNSC Laptops — featuring product browsing, smart search, cart & checkout, user authentication, and admin-ready functionality. Built with Next.js, Tailwind CSS, and Vercel.",
-    technologies: ["NextJS", "ReactJS", "NodeJS", "Typescript", "Tailwind CSS"],
-    github: "https://github.com/nekolaiv/lnsc-ecommerce",
-    live: "https://lnsc-ecommerce.vercel.app",
-  },
-  {
-    title: "BookCoup",
-    description:
-      "Full-stack Next.js library system with role-based access, dynamic book ID generation, borrowing constraints, and admin/user dashboards.",
-    technologies: ["NextJS", "ReactJS", "NodeJS", "Typescript", "Tailwind CSS"],
-    github: "https://github.com/nekolaiv/book-coup",
-    live: "https://book-coup.vercel.app",
-  },
-  {
-    title: "PromptEAT",
-    description:
-      "A growing open-source prompt library to Encode, Adapt, and Transform (EAT) ideas into powerful AI interactions.",
-    technologies: ["NextJS", "ReactJS", "NodeJS", "Typescript", "Tailwind CSS"],
-    github: "https://github.com/nekolaiv/prompt-eat",
-    live: "https://prompt-eat.vercel.app",
-  },
-  {
-    title: "VAWC Portal - WMSU | DILG",
-    description:
-      "A Django-powered portal for reporting and managing Violence Against Women (VAWC) cases, built with Bootstrap and JavaScript.",
-    technologies: ["Django", "Bootstrap", "CSS", "JavaScript"],
-    github: "https://github.com/jdcbdev/VawcPortalFinal ",
-    live: "http://vawc.jdcbdev.website/",
-  },
-  {
-    title: "Items Crudified",
-    description:
-      "A Django-based item manager with full CRUD features for easy tracking and organization.",
-    technologies: ["Django", "Tailwind CSS", "HTML", "CSS", "Python", "Javascript"],
-    github: "https://github.com/nekolaiv/items-crudified",
-    live: "https://nekolaiv.pythonanywhere.com/",
-  },
-  {
-    title: "GWA Calculator and Dean’s List Qualification System",
-    description:
-      "A PHP-powered tool for calculating and verifying Dean's List eligibility for WMSU CCS college students.",
-    technologies: ["PHP", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/nekolaiv/student-gwa-system",
-    live: "#",
-  }
 ]
 
 export default function Projects() {
