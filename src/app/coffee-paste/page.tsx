@@ -37,7 +37,7 @@ const windowsSteps = [
   "Run coffee_paste.exe inside it. Windows will warn it is from an unrecognized publisher — click “More info,” then “Run anyway.”",
   "The first time, Windows Firewall will ask to let it communicate. Allow it on private networks (your home or office Wi-Fi).",
   "A code appears in the window. Open Coffee Paste on your phone and scan it.",
-  "Optional: right-click coffee_paste.exe → Send to → Desktop, so you can open it without digging through the folder. It also keeps running in the tray after you close the window.",
+  "Optional: double-click Create Desktop Shortcut.bat in the same folder, so you can open it without digging through the folder. Closing the window quits the app — just open the shortcut again next time.",
 ]
 
 const androidSteps = [
