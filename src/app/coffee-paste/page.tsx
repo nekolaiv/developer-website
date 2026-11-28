@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowLeft, Lock, MousePointer2, QrCode, Wifi } from "lucide-react"
+import { Lock, MousePointer2, QrCode, Wifi } from "lucide-react"
 import DownloadCard from "./download-card"
 
 export const metadata: Metadata = {
@@ -53,14 +52,6 @@ export default function CoffeePastePage() {
   return (
     <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
-        <Link
-          href="/#projects"
-          className="inline-flex items-center text-sm text-gray-600 dark:text-gray-400 hover:underline"
-        >
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Back to projects
-        </Link>
-
         <section className="pt-14 pb-10">
           <Image
             src="/images/coffee-paste-icon.png"
